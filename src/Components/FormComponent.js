@@ -1,6 +1,6 @@
-import React, { useReducer } from "react";
+import React, { useEffect, useReducer } from "react";
 import classes from "./FormComponent.module.css";
-import { Form } from "react-router-dom";
+import { Form, useNavigation, useSubmit } from "react-router-dom";
 const initStates = {
   name: "",
   phoneNumber: "",
@@ -25,7 +25,11 @@ const FormComponent = () => {
   function submitHandler() {
     dispatch({ type: "reset" });
   }
-
+  const navigation = useNavigation();
+  const isSubmitting = navigation.state === "submitting";
+  useEffect(() => {
+    console.log(isSubmitting);
+  }, [isSubmitting]);
   return (
     <div className={classes.formContainer}>
       <Form method="POST" onSubmit={submitHandler}>
@@ -63,7 +67,7 @@ const FormComponent = () => {
             dispatch({ type: "email", value: e.target.value });
           }}
         />
-        <button>Submit</button>
+        <button>{isSubmitting ? "Submitting..." : "Submit"}</button>
       </Form>
     </div>
   );
@@ -88,8 +92,8 @@ export async function action({ request }) {
       body: JSON.stringify(data),
     }
   );
-  if (response.ok) {
-    alert("Form submitted successfully");
-  }
+  //   if (!response.ok) {
+  //     return response;
+  //   }
   return response;
 }
