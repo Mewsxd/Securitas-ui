@@ -2,26 +2,18 @@ import React from "react";
 import classes from "./Intro.module.css";
 // import back from "../../Assets/portrait-male-security-guard-with-uniform.jpg";
 import back from "../../Assets/portrait-male-security-guard-with-radio-station-camera-screens.jpg";
+import introGirl from "../../Assets/intro girl.png";
 const Intro = () => {
   return (
     <div className={classes.container}>
-      {/* <p
-        style={{
-          margin: 0,
-          fontSize: "4rem",
-          fontWeight: 600,
-          textAlign: "center",
-        }}
-      >
-        About Us
-      </p> */}
       <div className={classes.innerContainer}>
         <div className={classes.left}>
-          <img src={back} alt="ad jh " />
+          <img src={introGirl} alt="ad jh " />
         </div>
         <div className={classes.right}>
           <p className={classes.title} style={{ marginBottom: "2vw" }}>
-            Welcome to IronGate
+            Welcome to Beti Hai
+            <br /> Toh Kal Hai
           </p>
           <hr
             style={{
@@ -32,10 +24,14 @@ const Intro = () => {
             }}
           ></hr>
           <p className={classes.desc} style={{ marginTop: "2vw" }}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+            Our NGO envisions a future where the empowerment of education for
+            Indian women is a widespread reality. Committed to breaking
+            barriers, we dedicate ourselves to ensuring every Indian girl has
+            access to quality education, fostering gender equality, and creating
+            a transformative ripple effect across generations. Our vision is of
+            an India where the power of education uplifts entire communities,
+            transcending borders, enriching lives, and shaping a brighter future
+            for countless women and families across the nation.
           </p>
           {/* <p
             style={{

@@ -18,14 +18,6 @@ const Stats = () => {
       <p className={classes.mainTitle} style={{ marginBottom: "2vw" }}>
         A trusted leader in security for over two decades
       </p>
-      {/* <hr
-        style={{
-          color: "black",
-          width: "40px",
-          borderBottom: "2px solid #26224c",
-          margin: "0px 2px",
-        }}
-      ></hr> */}
       <div className={classes.innerContainer}>
         <div className={classes.text}>
           <p className={classes.number}>

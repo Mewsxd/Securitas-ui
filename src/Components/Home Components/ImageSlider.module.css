@@ -7,11 +7,14 @@
   /* object-fit: contain; */
   height: 46vw;
   overflow: hidden;
-  background-image: url("../../Assets/portrait-male-security-guard-with-uniform.jpg");
+  /* background-image: url("../../Assets/portrait-male-security-guard-with-uniform.jpg"); */
+  background-image: url("https://mediaindia.eu/wp-content/uploads/2018/11/children.jpg");
   /* background-size: 100% auto; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+
   /* background */
   /* background-image: url("../../Assets/portrait-male-security-guard-with-uniform\ \(1\).jpg"); */
 }
@@ -38,8 +41,8 @@
   cursor: pointer;
   border: none;
   outline: none;
-  background-color: white;
-  color: orangered;
+  background-color: orangered;
+  color: white;
   padding: 0vw 1vw;
   padding-top: 0.8vw;
   padding-bottom: 1vw;
@@ -63,11 +66,20 @@
   margin: 0;
   width: 50%;
   padding: 0vw 3.5vw;
-  padding-top: 13vw;
+  padding-top: 25vw;
   padding-bottom: 2vw;
   color: #fffcf2;
   font-size: 4vw;
   font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.hamburgerNavbar {
+  display: none;
+  position: fixed;
+  /* height: 65vw; */
+  width: 100vw;
+  z-index: 100;
+  background-color: #0d1b2a;
 }
 @media (max-width: 420px) {
   .container {
@@ -84,12 +96,13 @@
     font-size: 3.5vw;
     padding: 1.5vw;
   }
+
+  .container img {
+    display: inline-block;
+    width: 100%;
+  }
   .hamburgerNavbar {
-    position: absolute;
-    height: 30%;
-    width: 100vw;
-    background-color: #0d1b2a;
-    opacity: 0.95;
+    display: block;
   }
   .hamburgerNavbar ul {
     padding: 0vw 4.5vw;
@@ -97,11 +110,22 @@
   .hamburgerNavbar li {
     color: white;
     list-style: none;
-    line-height: 10vw;
+    line-height: 8.5vw;
     font-size: 4.5vw;
-  }
-  .container img {
-    display: inline-block;
-    width: 100%;
+    padding: 0.9vw 0vw;
   }
 }
+/* @media (max-width: 900px) {
+  .hamburgerNavbar {
+    display: block;
+  }
+  .hamburgerNavbar ul {
+    padding: 0vw 4.5vw;
+  }
+  .hamburgerNavbar li {
+    color: white;
+    list-style: none;
+    line-height: 6.5vw;
+    font-size: 3.5vw;
+  }
+} */

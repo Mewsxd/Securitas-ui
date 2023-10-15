@@ -1,9 +1,16 @@
 .container {
   background-color: #e3f0ff;
-  width: 98.85vw;
+  /* width: 98.85vw; */
+  width: 100%;
   display: flex;
   color: white;
   padding: 2vw 0vw;
+  margin-top: 10rem;
+}
+.innerContainer {
+  width: 90%;
+  margin: auto;
+  display: flex;
 }
 .container p {
   margin: 0;
@@ -45,6 +52,7 @@
   font-size: 1vw;
 }
 .right button {
+  font: inherit;
   border: none;
   border-radius: 5px;
   padding: 1vw 3vw;
@@ -82,12 +90,13 @@
 .text div {
   padding: 0vw 2vw;
 }
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .left {
     display: none;
   }
   .container {
     background-color: white;
+    margin-top: 2rem;
     /* flex-direction: column; */
   }
   .formContainer {
@@ -103,11 +112,11 @@
     width: 85%;
     border-radius: 3px;
     padding: 5vw 2vw;
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     margin: 2vw;
   }
   .right button {
-    font-size: 4vw;
+    font-size: 5vw;
     padding: 2.5vw 5.5vw;
     margin-top: 4vw;
   }

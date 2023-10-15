@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./Services.module.css";
 import facility from "../../Assets/Facility management.png";
 import security from "../../Assets/Event security.png";
-import securityServices from "../../Assets/Security services.png";
+// import""from "../../Assets/Security services.png";
 import cleaning from "../../Assets/Housekeeping.jpg";
 const Services = () => {
   return (
@@ -20,7 +20,7 @@ const Services = () => {
         Services
       </p>
       <div className={classes.card}>
-        <img src={securityServices} alt="facility" />
+        <img src="" alt="facility" />
         <div>
           <ul>
             <li>Certified Protection Officer (C.P.O.)</li>

@@ -1,21 +1,12 @@
 .container {
   width: 100vw;
-  /* background-color: #26224c; */
-  background-color: #0d1b2a;
+  background-color: #e3f0ff;
   height: 75px;
-  color: white;
+  color: black;
   display: flex;
   position: fixed;
   z-index: 100;
 }
-/* HAMBURGER ELEMENT */
-/* .hamburgerNavbar {
-  position: absolute;
-  transform: translateY(130%);
-  width: 100vw;
-  height: 10vw;
-  background-color: blue;
-} */
 .innerContainer {
   width: 90%;
   margin: 0 auto;
@@ -35,38 +26,46 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  /* gap: 4vw; */
 }
 .right ul {
   display: flex;
   list-style: none;
-  cursor: pointer;
   gap: 4vw;
 }
-.right button {
-  font-size: 1vw;
-  /* border: 1px solid blue; */
+.right li {
+  cursor: pointer;
+}
+.right a {
+  text-decoration: none;
+  color: black;
+}
+ul a:hover,
+ul a:active,
+ul a.active {
+  border-bottom: 4px solid #0d1b2a;
+}
+.right li {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 1.2vw;
   border: none;
-  /* border: none; */
   outline: none;
   padding: 1vw 0vw;
   background: transparent;
-  color: white;
+  color: black;
 }
-.right button:hover {
+/* .right li:hover {
   border-bottom: 2px solid orangered;
-  /* transition-property: border-bottom;
-  transition-duration: 2s;
-  transition-delay: 0.5s; */
-}
+} */
 
-.right li:hover {
+/* .right li:hover {
   color: rgb(178, 151, 0);
   text-decoration: underline;
-}
+} */
 .logoContainer {
   display: flex;
   margin-left: 5px;
+  /* display: none; */
 }
 .logoContainer p {
   margin: 0;

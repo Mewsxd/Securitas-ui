@@ -1,0 +1,133 @@
+.outerContainer {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 15rem;
+}
+.story {
+  display: flex;
+}
+.left {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+.left img {
+  width: 100%;
+  display: none;
+  /* display: none; */
+}
+.outerContainer h1 {
+  color: #495057;
+  font-size: 2.8vw;
+  line-height: 4vw;
+}
+.outerContainer p {
+  font-size: 1.08vw;
+  font-family: Poppins;
+  line-height: 2.5vw;
+}
+.right {
+  flex: 1.2;
+  text-align: right;
+}
+.story img {
+  width: 68%;
+  border-radius: 10px;
+}
+.right h1 {
+  display: none;
+}
+.vision {
+  display: flex;
+  padding-top: 10rem;
+}
+.bottomLeft {
+  flex: 1.2;
+  text-align: left;
+}
+.bottomRight {
+  flex: 1.5;
+}
+.vision img {
+  border-radius: 10px;
+  width: 80%;
+}
+.bottomLeft h1 {
+  display: none;
+}
+@media (max-width: 720px) {
+  .outerContainer {
+    width: 95%;
+  }
+  .outerContainer h1 {
+    margin: 0;
+    color: #495057;
+    font-size: 5.6vw;
+    line-height: 6vw;
+  }
+  .story img {
+    width: 95%;
+  }
+  .left {
+    flex: 1.6;
+    justify-content: center;
+  }
+  .outerContainer p {
+    font-size: 1.8vw;
+    word-spacing: 0.5vw;
+    font-family: Poppins;
+    line-height: 1.5;
+  }
+  .vision img {
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .outerContainer {
+    padding-top: 9rem;
+  }
+  .story {
+    flex-direction: column-reverse;
+  }
+  .outerContainer h1 {
+    margin: 0;
+    color: #495057;
+    font-size: 8.4vw;
+    line-height: 10vw;
+    text-align: center;
+    margin: 3rem 0rem;
+  }
+  .outerContainer p {
+    font-size: 3.5vw;
+    word-spacing: 1vw;
+    font-family: Poppins;
+    line-height: 2;
+  }
+  .right {
+    text-align: left;
+  }
+  .left img {
+    display: block;
+    width: 100%;
+  }
+  /* Make h1 tag in bottomLeft visible again */
+  .bottomLeft h1 {
+    display: block;
+    margin: 3rem 0rem;
+    text-align: center;
+  }
+  .bottomRight h1 {
+    display: none;
+  }
+  .vision img {
+    width: 100%;
+  }
+  .vision {
+    flex-direction: column;
+    padding-top: 6rem;
+  }
+  .right img {
+    /* width: 100%; */
+    display: none;
+  }
+}

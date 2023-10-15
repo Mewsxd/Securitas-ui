@@ -16,12 +16,11 @@ const ImageSlider = (props) => {
         </sector>
       )}
       <p>
-        Potential. <span style={{ color: "orangered" }}>Positivity.</span>
-        <br /> Progress.
+        Beti Hai Toh <br /> Kal Hai
+        <span style={{ color: "lightblue" }}></span>
+        <br />
       </p>
-      <button>
-        Learn more <span>&rarr;</span>
-      </button>
+      <button>Learn more</button>
     </div>
   );
 };

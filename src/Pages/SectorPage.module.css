@@ -1,0 +1,248 @@
+.mainContainer {
+  width: 100%;
+}
+.container img {
+  width: 100%;
+  margin-top: 5rem;
+}
+.container p:first-child {
+  font-size: 2.5vw;
+  font-weight: 700;
+  text-align: center;
+  color: #495057;
+  width: 80%;
+  margin: 3vw auto;
+}
+.education {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5rem 0rem;
+}
+.container ul {
+  padding: 0;
+}
+.education h1 {
+  font-size: 2vw;
+  font-weight: 600;
+}
+.education p,
+ul li {
+  word-wrap: break-word;
+  font-size: 1.2vw;
+  font-family: Poppins;
+  line-height: 2;
+}
+.education p {
+  margin-left: 2.5vw;
+}
+.education ul li {
+  margin-left: 3.7vw;
+}
+.education hr {
+  border: 2px solid #0d1b2a;
+  border-radius: 10px;
+}
+.education span {
+  text-decoration: underline;
+}
+.joinUsHeader {
+  position: relative;
+}
+.joinUsHeader img {
+  width: 100%;
+  filter: brightness(50%);
+}
+.innerJoinUsHeader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.innerJoinUsHeader h1 {
+  color: rgb(255, 189, 65);
+  font-size: 3vw;
+  font-weight: 800;
+}
+.innerJoinUsHeader p {
+  font-size: 1.5vw;
+  font-weight: 700;
+  color: white;
+}
+.responsiveImage {
+  display: none;
+}
+.memberForm {
+  width: 80%;
+  margin: 10rem auto;
+  text-align: center;
+}
+.memberForm h1 {
+  font-size: 2.5vw;
+  text-transform: capitalize;
+}
+.formContainer {
+  width: 70%;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px 1px lightgray;
+  margin: auto;
+}
+.formContainer form {
+  text-align: center;
+}
+.formContainer input {
+  background-color: #e3f0ff;
+  border: none;
+  outline: none;
+  width: 75%;
+  border-radius: 0.2vw;
+  margin: 1vw 1vw;
+  padding: 1vw;
+  font-size: 1vw;
+}
+.formContainer button {
+  font: inherit;
+  border: none;
+  border-radius: 5px;
+  padding: 1vw 3vw;
+  font-size: 1.25vw;
+  margin-top: 1.5vw;
+  background-color: #0d1b2a;
+  color: white;
+  margin-bottom: 1vw;
+}
+.formContainer label {
+  font-size: 1.2vw;
+  font-family: Poppins;
+}
+
+@media (max-width: 768px) {
+  .container p:first-child {
+    font-size: 5vw;
+  }
+  .education h1 {
+    font-size: 4vw;
+    /* width: 90%; */
+  }
+  .education p,
+  ul li {
+    font-size: 2.4vw;
+  }
+  .education p {
+    margin-left: 5vw;
+  }
+  .education ul li {
+    margin-left: 7.4vw;
+  }
+  .education {
+    padding: 3rem 0rem;
+  }
+  .innerJoinUsHeader {
+    width: 90%;
+  }
+  .joinUsHeader h1 {
+    color: rgb(255, 189, 65);
+    font-size: 5vw;
+    font-weight: 700;
+  }
+  .innerJoinUsHeader p {
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: white;
+  }
+  .memberForm {
+    width: 90%;
+  }
+  .formContainer {
+    width: 100%;
+  }
+  .formContainer input {
+    width: 80%;
+    border-radius: 2.5px;
+    margin: 2vw;
+    padding: 2vw;
+    font-size: 2vw;
+  }
+  .formContainer button {
+    padding: 1.5vw 6vw;
+    font-size: 2.5vw;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+  }
+  .memberForm h1 {
+    font-size: 5vw;
+  }
+  .formContainer label {
+    font-size: 2.4vw;
+  }
+}
+@media (max-width: 480px) {
+  .education {
+    padding: 3rem 0rem;
+    width: 95%;
+  }
+  .container img {
+    margin-top: 7.5rem;
+    height: 20vh;
+  }
+  .container p:first-child {
+    width: 95%;
+    font-size: 7.5vw;
+  }
+  .education h1 {
+    font-size: 6vw;
+  }
+  .education p,
+  ul li {
+    font-size: 3.8vw;
+  }
+  .education p {
+    margin-left: 5vw;
+  }
+  .education ul li {
+    margin-left: 7.4vw;
+  }
+  .fullImage {
+    display: none;
+  }
+  .responsiveImage {
+    display: block;
+  }
+  .joinUsHeader h1 {
+    color: orange;
+    font-size: 7.5vw;
+    font-weight: 700;
+  }
+  .innerJoinUsHeader p {
+    font-size: 3vw;
+    font-weight: 700;
+    color: white;
+  }
+  .formContainer input {
+    width: 80%;
+    border-radius: 3px;
+    margin: 4vw;
+    padding: 4vw;
+    font-size: 4vw;
+  }
+  .formContainer button {
+    padding: 3vw 12vw;
+    font-size: 5vw;
+    margin-top: 6vw;
+  }
+  .formContainer {
+    padding: 5vw 0vw;
+    width: 100%;
+  }
+  .memberForm h1 {
+    font-size: 7.5vw;
+  }
+  .formContainer label {
+    font-size: 4.8vw;
+  }
+}

@@ -1,5 +1,5 @@
 .container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   margin-top: 7vw;
   display: flex;
@@ -8,7 +8,7 @@
   flex-direction: column;
 }
 .title {
-  font-size: 2vw;
+  font-size: 2.7vw;
   font-weight: 600;
   text-align: center;
   color: #26224c;
@@ -26,9 +26,9 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  margin-top: 2vw;
-  gap: 5vw;
+  justify-content: space-between;
+  margin-top: 5vw;
+  width: 100%;
 }
 
 @media (max-width: 420px) {

@@ -1,6 +1,7 @@
 .container {
-  margin-top: 10vw;
-  width: 98.8vw;
+  /* margin-top: 10vw; */
+  /* width: 98.8vw; */
+  width: 100%;
   /* height: 432px; */
   background-color: #0d1b2a;
   /* background: linear-gradient(to right, #5a98f2, #67c3f3); */
@@ -95,9 +96,10 @@
 .rightRight {
   flex: 1;
 }
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .container {
     margin-top: 17vw;
+    width: 100%;
   }
   .innerContainer {
     flex-direction: column;
