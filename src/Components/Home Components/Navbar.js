@@ -4,19 +4,11 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = (props) => {
-  // const [open, setOpen] = useState(true);
-  // const hamburgerNavbarHandler = () => {
-  //   setOpen((state) => !state);
-  //   console.log("FROM Navbar.js ", open);
-  //   props.onStatus(open);
-  // };
   return (
     <div className={classes.container}>
       <div className={classes.innerContainer}>
         <div className={classes.left}>
-          <p style={{ fontSize: "1.5rem", fontWeight: 600 }}>
-            Shubhsita foundation
-          </p>
+          <p className={classes.title}>Shubhsita foundation</p>
           <div className={classes.logoContainer}>
             <p
               style={{
@@ -88,6 +80,16 @@ const Navbar = (props) => {
           </p>
         </div>
       </div>
+      {/* <div className={classes.hamburgerNavbar}>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Sector</li>
+          <li>Career</li>
+          <li>Contact Us</li>
+        </ul>
+      </div> */}
     </div>
   );
 };

@@ -3,7 +3,7 @@ import classes from "./ImageSlider.module.css";
 const ImageSlider = (props) => {
   return (
     <div className={classes.container}>
-      {props.isVisible && (
+      {/* {props.isVisible && (
         <sector className={classes.hamburgerNavbar}>
           <ul>
             <li>Home</li>
@@ -14,7 +14,7 @@ const ImageSlider = (props) => {
             <li>Contact Us</li>
           </ul>
         </sector>
-      )}
+      )} */}
       <p>
         Beti Hai Toh <br /> Kal Hai
         <span style={{ color: "lightblue" }}></span>
