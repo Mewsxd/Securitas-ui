@@ -33,7 +33,7 @@
 .right li {
   cursor: pointer;
 }
-.right a {
+a {
   text-decoration: none;
   color: black;
 }
@@ -54,8 +54,10 @@ ul a.active {
 }
 .logoContainer {
   display: flex;
-  margin-left: 5px;
+  align-items: center;
+  /* margin-left: 3vw; */
   /* display: none; */
+  transform: translateX(20%);
 }
 .logoContainer p {
   margin: 0;
@@ -74,15 +76,14 @@ ul a.active {
   background-color: #e3f0ff;
   color: black;
   text-align: center;
-  padding: 2vw 0vw;
 }
 .hamburgerNavbar ul {
-  padding: 2vw;
   padding: 0;
   margin: 0;
 }
 .hamburgerNavbar li {
   line-height: 2.5;
+  cursor: pointer;
 }
 .title {
   font-size: 1.5vw;
@@ -95,5 +96,20 @@ ul a.active {
   }
   .right ul {
     display: none;
+  }
+}
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+  .logoContainer {
+    display: none;
+  }
+  .hamburgerNavbar {
+    padding: 1rem 0vw;
+  }
+  .hamburgerNavbar li {
+    font-size: 1.8rem;
+    font-weight: 600;
   }
 }
