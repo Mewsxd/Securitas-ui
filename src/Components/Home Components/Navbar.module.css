@@ -1,5 +1,5 @@
 .container {
-  width: 100vw;
+  width: 100%;
   background-color: #e3f0ff;
   height: 75px;
   color: black;
@@ -54,14 +54,6 @@ ul a.active {
   background: transparent;
   color: black;
 }
-/* .right li:hover {
-  border-bottom: 2px solid orangered;
-} */
-
-/* .right li:hover {
-  color: rgb(178, 151, 0);
-  text-decoration: underline;
-} */
 .logoContainer {
   display: flex;
   margin-left: 5px;

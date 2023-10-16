@@ -25,6 +25,17 @@ function App() {
   //     }
   //   );
   // }, []);
+  useEffect(() => {
+    fetch(
+      "https://shubhsita-18680-default-rtdb.asia-southeast1.firebasedatabase.app/Contacts.json"
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        for (const x in data) {
+          console.log(x);
+        }
+      });
+  }, []);
   const router = createBrowserRouter([
     {
       index: "/",

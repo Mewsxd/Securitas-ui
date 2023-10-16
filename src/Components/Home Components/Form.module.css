@@ -120,4 +120,7 @@
     padding: 2.5vw 5.5vw;
     margin-top: 4vw;
   }
+  .innerContainer {
+    flex-direction: column;
+  }
 }
