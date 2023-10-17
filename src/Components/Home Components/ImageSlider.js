@@ -1,27 +1,18 @@
 import React from "react";
 import classes from "./ImageSlider.module.css";
+import { Link } from "react-router-dom";
 const ImageSlider = (props) => {
   return (
     <div className={classes.container}>
-      {/* {props.isVisible && (
-        <sector className={classes.hamburgerNavbar}>
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Sector</li>
-            <li>Career</li>
-            <li>Contact Us</li>
-          </ul>
-        </sector>
-      )} */}
       <div className={classes.sliderTextContainer}>
         <p>
           Beti Hai Toh <br /> Kal Hai
           <span style={{ color: "lightblue" }}></span>
           <br />
         </p>
-        <button>Learn more</button>
+        <button>
+          <Link to="/about">Learn more</Link>
+        </button>
       </div>
     </div>
   );
