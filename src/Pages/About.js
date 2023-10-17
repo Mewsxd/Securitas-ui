@@ -9,13 +9,9 @@ import { ValuesContainer } from "../Components/About us/ValuesContainer";
 const About = () => {
   return (
     <div>
-      {/* <ScrollToTop />
-      <Navbar /> */}
       <OurStory />
       <ValuesContainer />
-
       <Form />
-      {/* <Footer /> */}
     </div>
   );
 };

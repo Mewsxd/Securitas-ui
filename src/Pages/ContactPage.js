@@ -8,26 +8,12 @@ import FormComponent from "../Components/FormComponent";
 const ContactPage = () => {
   return (
     <div>
-      {/* <ScrollToTop />
-      <Navbar /> */}
       <div className={classes.mainContainer}>
         <h1>Need more details?</h1>
         <hr />
         <div className={classes.innerContainer}>
           <div className={classes.left}>
             <FormComponent />
-            {/* <div className={classes.formContainer}>
-              <form>
-                <input
-                  type="text"
-                  placeholder="Name"
-                  style={{ marginTop: "2vw" }}
-                />
-                <input type="text" placeholder="Phone number" />
-                <input type="email" placeholder="Email" />
-              </form>
-              <button>Submit</button>
-            </div> */}
           </div>
           <div className={classes.right}>
             <ul>
@@ -57,6 +43,7 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
+        <hr></hr>
         <h1 className={classes.thankYou}>Thank You For Contacting Us</h1>
       </div>
     </div>

@@ -16,7 +16,7 @@
 .education {
   width: 80%;
   margin: 0 auto;
-  padding: 5rem 0rem;
+  padding: 2.5rem 0rem;
 }
 .container ul {
   padding: 0;
@@ -47,6 +47,7 @@ ul li {
 }
 .joinUsHeader {
   position: relative;
+  margin-top: 5rem;
 }
 .joinUsHeader img {
   width: 100%;

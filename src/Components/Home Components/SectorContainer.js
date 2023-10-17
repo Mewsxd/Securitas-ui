@@ -11,8 +11,11 @@ export const SectorContainer = (props) => {
           <p className={classes.title}>{props.title}</p>
           <p className={classes.desc}>{props.desc}</p>
         </div>
+        <NavLink to="/sectors" className={classes.responsiveViewMore}>
+          <p>View More</p>
+        </NavLink>
         <NavLink to="/sectors">
-          <button className={classes.viewMore}>View More</button>
+          <button className={classes.viewMoreBtn}>View More</button>
         </NavLink>
       </div>
     </>
