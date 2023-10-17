@@ -15,12 +15,14 @@ const ImageSlider = (props) => {
           </ul>
         </sector>
       )} */}
-      <p>
-        Beti Hai Toh <br /> Kal Hai
-        <span style={{ color: "lightblue" }}></span>
-        <br />
-      </p>
-      <button>Learn more</button>
+      <div className={classes.sliderTextContainer}>
+        <p>
+          Beti Hai Toh <br /> Kal Hai
+          <span style={{ color: "lightblue" }}></span>
+          <br />
+        </p>
+        <button>Learn more</button>
+      </div>
     </div>
   );
 };

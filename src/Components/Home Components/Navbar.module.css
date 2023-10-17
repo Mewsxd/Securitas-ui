@@ -41,6 +41,7 @@ ul a:hover,
 ul a:active,
 ul a.active {
   border-bottom: 4px solid #0d1b2a;
+  /* border-radius: px; */
 }
 .right li {
   font-family: Montserrat;
@@ -54,10 +55,9 @@ ul a.active {
 }
 .logoContainer {
   display: flex;
-  align-items: center;
-  /* margin-left: 3vw; */
-  /* display: none; */
-  transform: translateX(20%);
+  /* transform: rotate(30deg); */
+  /* align-items: center;
+  transform: translateX(20%); */
 }
 .logoContainer p {
   margin: 0;
@@ -96,6 +96,11 @@ ul a.active {
   }
   .right ul {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 3vw;
   }
 }
 @media (max-width: 480px) {

@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./SectorContainer.module.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
 export const SectorContainer = (props) => {
   return (
     <>
@@ -10,7 +11,9 @@ export const SectorContainer = (props) => {
           <p className={classes.title}>{props.title}</p>
           <p className={classes.desc}>{props.desc}</p>
         </div>
-        {/* <p className={classes.readMore}>View More</p> */}
+        <NavLink to="/sectors">
+          <button className={classes.viewMore}>View More</button>
+        </NavLink>
       </div>
     </>
   );

@@ -1,6 +1,5 @@
 .container {
   background-color: #e3f0ff;
-  /* width: 98.85vw; */
   width: 100%;
   display: flex;
   color: white;
@@ -90,6 +89,21 @@
 .text div {
   padding: 0vw 2vw;
 }
+@media (max-width: 768px) {
+  .textTitle {
+    font-size: 5vw;
+    padding-top: 1vw;
+    font-weight: 600;
+  }
+  .text {
+    display: flex;
+    font-size: 2.2vw;
+    padding: 3vw 0vw;
+  }
+  .icons {
+    font-size: 5vw;
+  }
+}
 @media (max-width: 480px) {
   .left {
     display: none;
@@ -97,7 +111,6 @@
   .container {
     background-color: white;
     margin-top: 2rem;
-    /* flex-direction: column; */
   }
   .formContainer {
     width: 100%;
@@ -121,6 +134,7 @@
     margin-top: 4vw;
   }
   .innerContainer {
+    width: 95%;
     flex-direction: column;
   }
 }

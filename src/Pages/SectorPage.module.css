@@ -186,9 +186,14 @@ ul li {
     padding: 3rem 0rem;
     width: 95%;
   }
+  .container {
+    overflow: hidden;
+  }
   .container img {
     margin-top: 7.5rem;
-    height: 20vh;
+    width: 300%;
+    height: 30vh;
+    transform: translateX(-30%);
   }
   .container p:first-child {
     width: 95%;

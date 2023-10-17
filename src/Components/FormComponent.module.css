@@ -6,7 +6,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 6px 1px rgb(151, 151, 151);
+  /* box-shadow: 0 0 6px 1px rgb(151, 151, 151); */
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 }
 .formContainer form {
   text-align: center;
@@ -66,6 +67,6 @@
   }
   .formContainer {
     padding: 5vw 0vw;
-    width: 95%;
+    width: 100%;
   }
 }

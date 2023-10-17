@@ -68,18 +68,23 @@
   .story img {
     width: 95%;
   }
+  .story {
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
   .left {
     flex: 1.6;
     justify-content: center;
   }
   .outerContainer p {
-    font-size: 1.8vw;
+    /* font-size: 1.8vw; */
+    font-size: 2vw;
     word-spacing: 0.5vw;
     font-family: Poppins;
     line-height: 1.5;
   }
   .vision img {
-    width: 90%;
+    width: 95%;
   }
 }
 @media (max-width: 480px) {

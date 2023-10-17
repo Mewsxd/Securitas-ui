@@ -31,23 +31,26 @@
   width: 100%;
 }
 
-@media (max-width: 420px) {
-  .container {
-    margin-top: 17vw;
-  }
-  .title {
-    font-size: larger;
-  }
-}
-
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .inner {
     flex-direction: column;
+    margin: 0;
   }
   .icon {
     font-size: 15vw;
   }
   .title {
-    font-size: 7vw;
+    font-size: 5vw;
+  }
+}
+@media (max-width: 420px) {
+  .container {
+    margin-top: 17vw;
+  }
+  .inner {
+    margin-top: 0;
+  }
+  .title {
+    font-size: 9vw;
   }
 }

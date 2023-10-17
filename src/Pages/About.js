@@ -4,6 +4,7 @@ import Footer from "../Components/Home Components/Footer";
 import OurStory from "../Components/About us/OurStory";
 import Form from "../Components/Home Components/Form";
 import ScrollToTop from "./ScrollToTop";
+import { ValuesContainer } from "../Components/About us/ValuesContainer";
 
 const About = () => {
   return (
@@ -11,6 +12,8 @@ const About = () => {
       {/* <ScrollToTop />
       <Navbar /> */}
       <OurStory />
+      <ValuesContainer />
+
       <Form />
       {/* <Footer /> */}
     </div>

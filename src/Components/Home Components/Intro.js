@@ -15,14 +15,7 @@ const Intro = () => {
             Welcome to Beti Hai
             <br /> Toh Kal Hai
           </p>
-          <hr
-            style={{
-              color: "black",
-              width: "40px",
-              borderBottom: "3px solid #26224c",
-              margin: "0px 2px",
-            }}
-          ></hr>
+          <hr />
           <p className={classes.desc} style={{ marginTop: "2vw" }}>
             Our NGO envisions a future where the empowerment of education for
             Indian women is a widespread reality. Committed to breaking

@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Sectors.module.css";
 import { SectorContainer } from "./SectorContainer";
+import { NavLink } from "react-router-dom";
 // import {
 //   FaGraduationCap,
 //   FaHospitalAlt,
@@ -18,7 +19,7 @@ const Sectors = () => {
         <SectorContainer
           icon="https://images.edexlive.com/uploads/user/imagelibrary/2019/3/8/original/2-india.jpg"
           title="Education"
-          desc="Committed to education for all, our NGO offers free learning opportunities, empowering communities for a brighter future"
+          desc="Committed to education for all, our NGO offers free learning opportunities, empowering women's lives"
         />
         <SectorContainer
           icon="https://img.freepik.com/free-photo/wooden-gavel_93675-134630.jpg?w=996&t=st=1697018448~exp=1697019048~hmac=b1e1de872568ffef18d052e0143e6aef3031c218c12f333185695b81d3e421c1"

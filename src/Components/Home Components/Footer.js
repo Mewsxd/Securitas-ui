@@ -1,12 +1,16 @@
 import React from "react";
 import classes from "./Footer.module.css";
+import { Link } from "react-router-dom";
+import { BsFacebook } from "react-icons/bs";
+import { GrYoutube } from "react-icons/gr";
+import { AiFillInstagram } from "react-icons/ai";
 const Footer = () => {
   return (
     <div className={classes.container}>
       <div className={classes.innerContainer}>
         <div className={classes.left}>
           <div className={classes.logo}>
-            <p style={{ fontSize: "1.5rem", fontWeight: 600 }}>IronGate</p>
+            <p className={classes.title}>Shubhsita foundation</p>
             <div className={classes.logoContainer}>
               <p
                 style={{
@@ -27,25 +31,32 @@ const Footer = () => {
             {/* </div> */}
           </div>
           <p className={classes.desc}>
-            IronGate provides progressive, and affordable
-            <br /> security, accessible worldwide
-            <br /> for everyone
+            Shubhsita provides progressive and affordable empowerment,
+            accessible nation wide for every woman.
           </p>
           <p style={{ fontWeight: 300 }} className={classes.desc}>
-            ©IronGate LTD 2020. All rights reserved
+            ©Shubhsita foundation LTD 2023. All rights reserved
           </p>
         </div>
         <div className={classes.right}>
           <div className={classes.rightLeft}>
             <p>Company</p>
             <ul>
-              <li>About</li>
-              <li>Testimonials</li>
-              <li>Find a service</li>
-              <li>Apps</li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to="/sectors">Sectors</Link>
+              </li>
+              <li>
+                <Link>Team Members</Link>
+              </li>
+              <li>
+                <Link to="contacts">Contact Us</Link>
+              </li>
             </ul>
           </div>
-          <div className={classes.rightCenter}>
+          {/* <div className={classes.rightCenter}>
             <p>Region</p>
             <ul>
               <li>Mumbai</li>
@@ -53,15 +64,26 @@ const Footer = () => {
               <li>Delhi</li>
               <li>Kerala</li>
             </ul>
-          </div>
+          </div> */}
           <div className={classes.rightRight}>
             <p>Help</p>
             <ul>
-              <li>Help center</li>
-              <li>Contact support</li>
-              <li>Instructions</li>
-              <li>How is works</li>
+              <li>
+                Priyadarshini College Rd, near Swami Samarth Mandir, Alodi,
+                Wardha, Maharashtra 442001
+              </li>
+              <li>+91 8329683501, +91 8767468470</li>
+              {/* <li className={classes.socialMediaIcons}>
+                <BsFacebook className={classes.socialMediaIcons} />
+                <GrYoutube className={classes.socialMediaIcons} />
+                <AiFillInstagram className={classes.socialMediaIcons} />
+              </li> */}
             </ul>
+            <div className={classes.socialMediaIcons}>
+              <BsFacebook />
+              <GrYoutube />
+              <AiFillInstagram />
+            </div>
           </div>
         </div>
       </div>
