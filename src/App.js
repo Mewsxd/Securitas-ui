@@ -10,6 +10,7 @@ import SectorsPage from "./Pages/SectorsPage";
 import RootLayout from "./Pages/RootLayout";
 import { useEffect } from "react";
 import { action as formSubmitAction } from "./Components/FormComponent";
+import { ErrorPage } from "./Pages/ErrorPage";
 
 function App() {
   const hello = "Hello everynyan";
@@ -40,6 +41,7 @@ function App() {
     {
       index: "/",
       element: <RootLayout />,
+      errorElement: <ErrorPage />,
       children: [
         { index: true, element: <Home />, action: formSubmitAction },
         { path: "/about", element: <About />, action: formSubmitAction },
