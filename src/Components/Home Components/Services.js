@@ -1,9 +1,9 @@
 import React from "react";
 import classes from "./Services.module.css";
-import facility from "../../Assets/Facility management.png";
-import security from "../../Assets/Event security.png";
+// import facility from "../../Assets/Facility management.png";
+// import security from "../../Assets/Event security.png";
 // import""from "../../Assets/Security services.png";
-import cleaning from "../../Assets/Housekeeping.jpg";
+// import cleaning from "../../Assets/Housekeeping.jpg";
 const Services = () => {
   return (
     <div className={classes.container}>
@@ -33,7 +33,7 @@ const Services = () => {
         </div>
       </div>
       <div className={classes.card}>
-        <img src={facility} alt="facility" />
+        {/* <img src={facility} alt="facility" /> */}
         <div>
           <ul>
             <li>Pest control services</li>
@@ -46,7 +46,7 @@ const Services = () => {
       </div>
 
       <div className={classes.card}>
-        <img src={cleaning} alt="facility" />
+        {/* <img src={cleaning} alt="facility" /> */}
         <div>
           <ul>
             <li>Dusting</li>
@@ -58,7 +58,7 @@ const Services = () => {
         </div>
       </div>
       <div className={classes.card}>
-        <img src={security} alt="facility" />
+        {/* <img src={security} alt="facility" /> */}
         <div>
           <ul>
             <li>Intelligence to manage the gathering</li>
