@@ -1,5 +1,4 @@
 import React from "react";
-import classes from "./Home.module.css";
 import ImageSlider from "../Components/Home Components/ImageSlider";
 import Intro from "../Components/Home Components/Intro";
 import Sectors from "../Components/Home Components/Sectors";

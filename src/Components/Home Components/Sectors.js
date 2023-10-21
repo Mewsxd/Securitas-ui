@@ -1,16 +1,6 @@
 import React from "react";
 import classes from "./Sectors.module.css";
 import { SectorContainer } from "./SectorContainer";
-import { NavLink } from "react-router-dom";
-// import {
-//   FaGraduationCap,
-//   FaHospitalAlt,
-//   FaIndustry,
-//   FaPiggyBank,
-//   FaPlaneDeparture,
-// } from "react-icons/fa";
-// import { TbBuildingBank } from "react-icons/tb";
-// import { BsBuildingFill } from "react-icons/bs";
 const Sectors = () => {
   return (
     <div className={classes.container}>

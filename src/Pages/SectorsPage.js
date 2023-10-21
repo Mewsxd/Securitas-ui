@@ -43,7 +43,6 @@ const SectorsPage = () => {
                 and empowerment.
               </li>
             </ul>
-            {/* <hr /> */}
           </div>
           <div className={classes.education}>
             <h1>
@@ -80,7 +79,6 @@ const SectorsPage = () => {
                 experienced legal professionals.
               </li>
             </ul>
-            {/* <hr /> */}
           </div>
           <div className={classes.education}>
             <h1>
@@ -117,7 +115,6 @@ const SectorsPage = () => {
                 ongoing support and guidance.
               </li>
             </ul>
-            {/* <hr /> */}
           </div>
         </section>
       </div>
@@ -133,9 +130,7 @@ const SectorsPage = () => {
           </p>
         </div>
       </div>
-      {/* <h1 className={classes.fillTheForm}></h1> */}
       <div className={classes.memberForm}>
-        {/* <div className={classes.left}> */}
         <h1>Fill the form to become a member</h1>
         <div className={classes.formContainer}>
           <form>
@@ -153,7 +148,6 @@ const SectorsPage = () => {
           <button>Submit</button>
         </div>
       </div>
-      {/* </div> */}
     </div>
   );
 };
