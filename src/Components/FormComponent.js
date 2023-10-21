@@ -92,8 +92,9 @@ export async function action({ request }) {
       body: JSON.stringify(data),
     }
   );
-  //   if (!response.ok) {
-  //     return response;
-  //   }
+  if (!response.ok) {
+    alert("Could not submit form due to error! ");
+    return response;
+  }
   return response;
 }
