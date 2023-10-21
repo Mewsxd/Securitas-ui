@@ -58,7 +58,6 @@ const Services = () => {
         </div>
       </div>
       <div className={classes.card}>
-        {/* <img src={security} alt="facility" /> */}
         <div>
           <ul>
             <li>Intelligence to manage the gathering</li>

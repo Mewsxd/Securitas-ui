@@ -1,8 +1,4 @@
-import {
-  BrowserRouter,
-  RouterProvider,
-  createBrowserRouter,
-} from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import ContactPage from "./Pages/ContactPage";
@@ -13,19 +9,6 @@ import { action as formSubmitAction } from "./Components/FormComponent";
 import { ErrorPage } from "./Pages/ErrorPage";
 
 function App() {
-  const hello = "Hello everynyan";
-  // useEffect(() => {
-  //   fetch(
-  //     "https://shubhsita-18680-default-rtdb.asia-southeast1.firebasedatabase.app/Contacts.json",
-  //     {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify(hello),
-  //     }
-  //   );
-  // }, []);
   useEffect(() => {
     fetch(
       "https://shubhsita-18680-default-rtdb.asia-southeast1.firebasedatabase.app/Contacts.json"

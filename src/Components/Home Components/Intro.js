@@ -1,7 +1,5 @@
 import React from "react";
 import classes from "./Intro.module.css";
-// import back from "../../Assets/portrait-male-security-guard-with-uniform.jpg";
-import back from "../../Assets/portrait-male-security-guard-with-radio-station-camera-screens.jpg";
 import introGirl from "../../Assets/intro girl.png";
 const Intro = () => {
   return (
@@ -26,19 +24,6 @@ const Intro = () => {
             transcending borders, enriching lives, and shaping a brighter future
             for countless women and families across the nation.
           </p>
-          {/* <p
-            style={{
-              fontSize: "1.1rem",
-              width: "75%",
-              lineHeight: "1.8rem",
-              wordSpacing: "0.5rem",
-            }}
-          >
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
-          </p> */}
         </div>
       </div>
     </div>
