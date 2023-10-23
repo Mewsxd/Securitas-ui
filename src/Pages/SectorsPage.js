@@ -7,7 +7,7 @@ const SectorsPage = () => {
   return (
     <div className={classes.mainContainer}>
       <div className={classes.container}>
-        <img src={villagePhoto} />
+        <img src={villagePhoto} alt="img" />
         <section>
           <p>Services provided for following sectors</p>
           <div className={classes.education}>
@@ -119,8 +119,12 @@ const SectorsPage = () => {
         </section>
       </div>
       <div className={classes.joinUsHeader}>
-        <img src={joinUsImage} className={classes.fullImage} />
-        <img src={joinUsImageResize} className={classes.responsiveImage} />
+        <img src={joinUsImage} className={classes.fullImage} alt="img" />
+        <img
+          src={joinUsImageResize}
+          className={classes.responsiveImage}
+          alt="img"
+        />
         <div className={classes.innerJoinUsHeader}>
           <h1>Join Us And Become A Member</h1>
           <p>

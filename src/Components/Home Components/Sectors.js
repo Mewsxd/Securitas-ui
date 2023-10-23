@@ -21,23 +21,6 @@ const Sectors = () => {
           title="Jobs"
           desc="NGO empowers women with jobs, fostering independence, economic growth, and positive community impact"
         />
-        {/* </div> */}
-        {/* <div className={classes.inner}> */}
-        {/* <SectorContainer
-          icon={<FaIndustry className={classes.icon} />}
-          title="Industrial sector"
-          desc="Most businesses in the industrial sector make and sell capital goods, provide transportation services, or offer commercial services and supplies."
-        />
-        <SectorContainer
-          icon={<BsBuildingFill className={classes.icon} />}
-          title="Banks"
-          desc="Numerous public and private banks and their branches in India are also among our clients. We offer the best facility management services to each client."
-        />
-        <SectorContainer
-          icon={<TbBuildingBank className={classes.icon} />}
-          title="Central and state government"
-          desc="Across multiple states in India, we manage the facilities for a wide variety of government agencies."
-        /> */}
       </div>
     </div>
   );
