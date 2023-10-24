@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./OurStory.module.css";
 import oldWoman from "../../Assets/old woman.jpg";
 import croppedSchoolGirl from "../../Assets/school girl vertical cropped.jpg";
+import schoolGirl from "../../Assets/school girl vertical.webp";
 const OurStory = () => {
   return (
     <div className={classes.outerContainer}>
@@ -21,7 +22,7 @@ const OurStory = () => {
           </p>
         </section>
         <section className={classes.right}>
-          <img src="https://static.wixstatic.com/media/0851ee_b3709ea627574baa975f17a2ce81b0f9~mv2.jpg/v1/fill/w_640,h_960,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/school%20girl%20vertical.jpg" />
+          <img src={schoolGirl} />
         </section>
       </div>
       <div className={classes.vision}>
