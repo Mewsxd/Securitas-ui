@@ -7,6 +7,7 @@
   color: orangered;
   text-align: center;
   text-transform: capitalize;
+  text-decoration: underline;
 }
 .sliderContainer {
   width: 100%;
@@ -20,10 +21,9 @@
   z-index: 100;
 }
 .sliderContainer button {
-  cursor: pointer;
   border: none;
   background-color: transparent;
-  color: #cfe5ff;
+  color: darkslateblue;
   z-index: 200;
   position: absolute;
   font-size: 80px;

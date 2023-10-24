@@ -56,15 +56,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          {/* <div className={classes.rightCenter}>
-            <p>Region</p>
-            <ul>
-              <li>Mumbai</li>
-              <li>Bangalore</li>
-              <li>Delhi</li>
-              <li>Kerala</li>
-            </ul>
-          </div> */}
           <div className={classes.rightRight}>
             <p>Help</p>
             <ul>
