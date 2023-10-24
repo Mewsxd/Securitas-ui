@@ -64,11 +64,6 @@ const Footer = () => {
                 Wardha, Maharashtra 442001
               </li>
               <li>+91 8329683501, +91 8767468470</li>
-              {/* <li className={classes.socialMediaIcons}>
-                <BsFacebook className={classes.socialMediaIcons} />
-                <GrYoutube className={classes.socialMediaIcons} />
-                <AiFillInstagram className={classes.socialMediaIcons} />
-              </li> */}
             </ul>
             <div className={classes.socialMediaIcons}>
               <BsFacebook />
