@@ -1,7 +1,7 @@
 .container {
   width: 80%;
-  margin: 0 auto;
-  margin-top: 7vw;
+  margin: 7vw auto;
+  /* margin-top: 7vw; */
   display: flex;
   align-items: center;
   justify-content: center;
