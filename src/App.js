@@ -4,11 +4,15 @@ import About from "./Pages/About";
 import ContactPage from "./Pages/ContactPage";
 import SectorsPage from "./Pages/SectorsPage";
 import RootLayout from "./Pages/RootLayout";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { action as formSubmitAction } from "./Components/FormComponent";
 import { ErrorPage } from "./Pages/ErrorPage";
 
 function App() {
+  const [myName, setMyName] = useState("");
+  useEffect(() => {
+    console.log("Hi");
+  }, [myName]);
   useEffect(() => {
     fetch(
       "https://shubhsita-18680-default-rtdb.asia-southeast1.firebasedatabase.app/Contacts.json"
@@ -16,7 +20,7 @@ function App() {
       .then((res) => res.json())
       .then((data) => {
         for (const x in data) {
-          console.log(x);
+          // console.log(x);
         }
       });
   }, []);

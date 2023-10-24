@@ -107,6 +107,7 @@ ul li {
   font-size: 1vw;
 }
 .formContainer button {
+  cursor: pointer;
   font: inherit;
   border: none;
   border-radius: 5px;

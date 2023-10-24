@@ -1,13 +1,15 @@
 import React from "react";
-import ImageSlider from "../Components/Home Components/ImageSlider";
 import Intro from "../Components/Home Components/Intro";
 import Sectors from "../Components/Home Components/Sectors";
 import Form from "../Components/Home Components/Form";
+import HeroSection from "../Components/Home Components/HeroSection";
+import Inauguration from "../Components/Home Components/Inauguration";
 const Home = () => {
   return (
     <div>
-      <ImageSlider />
+      <HeroSection />
       <Intro />
+      <Inauguration />
       <Sectors />
       <Form />
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
-import classes from "./ImageSlider.module.css";
+import classes from "./HeroSection.module.css";
 import { Link } from "react-router-dom";
-const ImageSlider = (props) => {
+const HeroSection = (props) => {
   return (
     <div className={classes.container}>
       <div className={classes.sliderTextContainer}>
@@ -18,4 +18,4 @@ const ImageSlider = (props) => {
   );
 };
 
-export default ImageSlider;
+export default HeroSection;

@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./SectorPage.module.css";
 import villagePhoto from "../Assets/villagewomen.jpg";
 import joinUsImage from "../Assets/join us image.jpg";
 import joinUsImageResize from "../Assets/join us image resize.jpg";
+import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
+import { storage } from "../Firebase/firebase";
+import { v4 } from "uuid";
 const SectorsPage = () => {
+  const [aadharFile, setAadharFile] = useState(null);
+  const [fileUrl, setFileUrl] = useState();
+  function formSubmit(e) {
+    e.preventDefault();
+    const fileRef = ref(storage, `AadharImages/${aadharFile.name + v4()}`);
+    uploadBytes(fileRef, aadharFile)
+      .then(() => alert("Photo has been posted"))
+      .then(getDownloadURL(fileRef).then((url) => setFileUrl(url)));
+  }
+  console.log(fileUrl);
   return (
     <div className={classes.mainContainer}>
       <div className={classes.container}>
@@ -82,7 +95,7 @@ const SectorsPage = () => {
           </div>
           <div className={classes.education}>
             <h1>
-              3) <span>Legal services to women</span>
+              3) <span>Job Opportunities to women</span>
             </h1>
             <p>
               Empowering women economically, Shubhsita Foundation, based in
@@ -142,14 +155,22 @@ const SectorsPage = () => {
               type="text"
               placeholder="Name"
               style={{ marginTop: "2vw" }}
+              required
             />
-            <input type="text" placeholder="Phone number" />
-            <input type="email" placeholder="Email" />
+            <input type="text" placeholder="Phone number" required />
+            <input type="email" placeholder="Email" required />
             <br />
-            <label for="aadhar">Upload your Aadhar Card</label>
-            <input type="file" id="aadhar" />
+            <label for="aadhar" required>
+              Upload your Aadhar Card
+            </label>
+            <input
+              type="file"
+              id="aadhar"
+              onChange={(e) => setAadharFile(e.target.files[0])}
+              required
+            />
           </form>
-          <button>Submit</button>
+          <button onClick={formSubmit}>Submit</button>
         </div>
       </div>
     </div>
@@ -157,3 +178,6 @@ const SectorsPage = () => {
 };
 
 export default SectorsPage;
+// export async function action() {
+//   const [myAge, setMyAge] = useState("");
+// }
