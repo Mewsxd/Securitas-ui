@@ -1,7 +1,6 @@
 .container {
   width: 80%;
-  margin: 0 auto;
-  margin-top: 7vw;
+  margin: 7vw auto;
 }
 .container p {
   margin: 0;
