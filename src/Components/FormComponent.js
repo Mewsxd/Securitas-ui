@@ -1,6 +1,6 @@
 import React, { useEffect, useReducer } from "react";
 import classes from "./FormComponent.module.css";
-import { Form, useNavigation, useSubmit } from "react-router-dom";
+import { Form, useNavigation } from "react-router-dom";
 const initStates = {
   name: "",
   phoneNumber: "",

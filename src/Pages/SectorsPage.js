@@ -12,11 +12,10 @@ const SectorsPage = () => {
   function formSubmit(e) {
     e.preventDefault();
     const fileRef = ref(storage, `AadharImages/${aadharFile.name + v4()}`);
-    uploadBytes(fileRef, aadharFile)
-      .then(() => alert("Photo has been posted"))
-      .then(getDownloadURL(fileRef).then((url) => setFileUrl(url)));
+    uploadBytes(fileRef, aadharFile).then((snapshot) => {
+      getDownloadURL(snapshot.ref).then((url) => setFileUrl(url));
+    });
   }
-  console.log(fileUrl);
   return (
     <div className={classes.mainContainer}>
       <div className={classes.container}>
@@ -169,6 +168,11 @@ const SectorsPage = () => {
               onChange={(e) => setAadharFile(e.target.files[0])}
               required
             />
+            {/* <input
+              className={classes.submitButton}
+              onClick={formSubmit}
+              type="submit"
+            /> */}
           </form>
           <button onClick={formSubmit}>Submit</button>
         </div>

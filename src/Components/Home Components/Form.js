@@ -37,18 +37,6 @@ const Form = () => {
         </div>
         <div className={classes.right}>
           <FormComponent />
-          {/* <div className={classes.formContainer}>
-          <form>
-            <input
-              type="text"
-              placeholder="Name"
-              style={{ marginTop: "2vw" }}
-            />
-            <input type="text" placeholder="Phone number" />
-            <input type="email" placeholder="Email" />
-          </form>
-          <button>Submit</button>
-        </div> */}
         </div>
       </div>
     </div>
