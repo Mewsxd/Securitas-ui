@@ -1,7 +1,6 @@
 import React from "react";
 import classes from "./SectorContainer.module.css";
 import { Link, NavLink } from "react-router-dom";
-import { BsFillArrowRightCircleFill } from "react-icons/bs";
 export const SectorContainer = (props) => {
   return (
     <>
