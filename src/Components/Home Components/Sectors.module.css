@@ -1,7 +1,6 @@
 .container {
   width: 80%;
   margin: 7vw auto;
-  /* margin-top: 7vw; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +17,6 @@
 }
 .icon {
   padding: 1vw 0vw;
-  /* font-size: 4rem; */
   font-size: 4vw;
   color: #26224c;
 }
