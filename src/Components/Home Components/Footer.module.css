@@ -12,8 +12,14 @@
 }
 .logo {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   padding: 0vw 0vw;
+  align-items: center;
+  gap: 15px;
+}
+.logo img {
+  width: 10%;
+  border-radius: 50%;
 }
 .logoContainer {
   display: flex;
@@ -102,7 +108,7 @@ a:active {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .innerContainer {
     width: 90%;
     flex-direction: column;
@@ -130,6 +136,9 @@ a:active {
   }
 }
 @media (max-width: 480px) {
+  .logo img {
+    width: 12.5%;
+  }
   .container {
     margin-top: 17vw;
     width: 100%;

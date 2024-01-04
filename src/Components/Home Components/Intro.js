@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Intro.module.css";
 import introGirl from "../../Assets/intro girl.png";
+import { Link } from "react-router-dom";
 const Intro = () => {
   return (
     <div className={classes.container}>
@@ -26,6 +27,9 @@ const Intro = () => {
           </p>
         </div>
       </div>
+      <Link to={"/event"}>
+        <button className={classes.eventsButton}>Upcoming events</button>
+      </Link>
     </div>
   );
 };

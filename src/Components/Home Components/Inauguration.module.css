@@ -28,7 +28,7 @@
   border: none;
   background-color: transparent;
   color: orangered;
-  z-index: 200;
+  z-index: 95;
   position: absolute;
   font-size: 5vw;
 }

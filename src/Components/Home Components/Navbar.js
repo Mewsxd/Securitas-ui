@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import classes from "./Navbar.module.css";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { Link, NavLink } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
+import logo from "../../Assets/logo.png";
 const Navbar = (props) => {
   const [showHamburger, setShowHamburger] = useState(false);
   function hamburgerListener() {
@@ -12,10 +12,22 @@ const Navbar = (props) => {
     <div className={classes.container}>
       <div className={classes.innerContainer}>
         <div className={classes.left}>
-          <p className={classes.title} onClick={() => setShowHamburger(false)}>
-            Shubhsita foundation
-          </p>
-          <div className={classes.logoContainer}>
+          <img
+            src={logo}
+            className={classes.logo}
+            // style={{ width: "10%", backgroundBlendMode: "lighten" }}
+            alt="logo"
+          />
+          <NavLink to={"/"}>
+            <p
+              className={classes.title}
+              onClick={() => setShowHamburger(false)}
+            >
+              Beti Hai Toh Kal Hai
+            </p>
+          </NavLink>
+
+          {/* <div className={classes.logoContainer}>
             <p
               style={{
                 backgroundColor: "red",
@@ -31,7 +43,7 @@ const Navbar = (props) => {
                 backgroundColor: "green",
               }}
             ></p>
-          </div>
+          </div> */}
         </div>
         <div className={classes.right}>
           <ul>
@@ -68,7 +80,17 @@ const Navbar = (props) => {
                 Sectors
               </NavLink>
             </li>
-            <li>Career</li>
+            <li>
+              <NavLink
+                to="/members"
+                className={({ isActive }) =>
+                  isActive ? classes.active : undefined
+                }
+                end
+              >
+                Members
+              </NavLink>
+            </li>
             <li>
               <NavLink
                 to="/contacts"
@@ -122,7 +144,17 @@ const Navbar = (props) => {
                 Sectors
               </NavLink>
             </li>
-            <li>Career</li>
+            <li>
+              <NavLink
+                to="/members"
+                className={({ isActive }) =>
+                  isActive ? classes.active : undefined
+                }
+                end
+              >
+                Members
+              </NavLink>
+            </li>
             <li>
               <NavLink
                 to="/contacts"

@@ -4,38 +4,22 @@ import { Link } from "react-router-dom";
 import { BsFacebook } from "react-icons/bs";
 import { GrYoutube } from "react-icons/gr";
 import { AiFillInstagram } from "react-icons/ai";
+import logo from "../../Assets/logo.png";
 const Footer = () => {
   return (
     <div className={classes.container}>
       <div className={classes.innerContainer}>
         <div className={classes.left}>
           <div className={classes.logo}>
-            <p className={classes.title}>Shubhsita foundation</p>
-            <div className={classes.logoContainer}>
-              <p
-                style={{
-                  backgroundColor: "red",
-                }}
-              ></p>
-              <p
-                style={{
-                  backgroundColor: "orange",
-                }}
-              ></p>
-              <p
-                style={{
-                  backgroundColor: "green",
-                }}
-              ></p>
-            </div>
-            {/* </div> */}
+            <img src={logo} alt="logo" />
+            <p className={classes.title}>Beti Hai Toh Kal Hai</p>
           </div>
           <p className={classes.desc}>
-            Shubhsita provides progressive and affordable empowerment,
+            Our foundation provides progressive and affordable empowerment,
             accessible nation wide for every woman.
           </p>
           <p style={{ fontWeight: 300 }} className={classes.desc}>
-            ©Shubhsita foundation LTD 2023. All rights reserved
+            ©Beti Hai Toh Kal Hai LTD 2023. All rights reserved
           </p>
         </div>
         <div className={classes.right}>
@@ -57,13 +41,13 @@ const Footer = () => {
             </ul>
           </div>
           <div className={classes.rightRight}>
-            <p>Help</p>
+            <p>Reach us</p>
             <ul>
               <li>
-                Priyadarshini College Rd, near Swami Samarth Mandir, Alodi,
-                Wardha, Maharashtra 442001
+                F-1204, Sonam Shrivilas, new golden nest phase 15, bhayandar
+                east, thane 401105
               </li>
-              <li>+91 8329683501, +91 8767468470</li>
+              <li>+91 8169017703, +91 7021840281</li>
             </ul>
             <div className={classes.socialMediaIcons}>
               <BsFacebook />

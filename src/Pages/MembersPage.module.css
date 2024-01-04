@@ -1,0 +1,21 @@
+.membersContainer {
+  width: 85%;
+  margin: 0 auto;
+  /* display: inline-block; */
+  padding: 200px 0;
+  display: flex;
+  justify-content: space-between;
+  /* flex-grow: ; */
+  flex-wrap: wrap;
+  gap: 50px;
+}
+@media (max-width: 820px) {
+  .membersContainer {
+    padding: 200px 0 50px 0;
+  }
+}
+@media (max-width: 646px) {
+  .membersContainer {
+    justify-content: center;
+  }
+}

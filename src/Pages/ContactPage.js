@@ -20,20 +20,20 @@ const ContactPage = () => {
               <li>
                 <AiFillHome />
                 <span>
-                  Priyadarshini College Rd, near Swami Samarth Mandir, Alodi,
-                  Wardha, Maharashtra 442001
+                  F-1204, Sonam Shrivilas, new golden nest phase 15, bhayandar
+                  east, thane 401105
                 </span>
               </li>
               <li>
                 <MdEmail />{" "}
                 <span>
-                  contact@languagefluent.com <br />{" "}
-                  imranbanani@languagefluent.com
+                  satish3272003@yahoo.co.in <br />{" "}
+                  {/* imranbanani@languagefluent.com */}
                 </span>
               </li>
 
               <li>
-                <BsPhoneFill /> <span>+91 8329683501, +91 8767468470</span>
+                <BsPhoneFill /> <span>+91 8169017703, +91 7021840281</span>
               </li>
             </ul>
             <div className={classes.socialMediaIcons}>

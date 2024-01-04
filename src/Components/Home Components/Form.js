@@ -16,21 +16,21 @@ const Form = () => {
               <MdEmail className={classes.icons} />
               <div>
                 <p>Chat with us</p>
-                <p>irongate.info@gmail.com</p>
+                <p>satish3272003@yahoo.co.in</p>
               </div>
             </div>
             <div className={classes.text}>
               <BsTelephoneFill className={classes.icons} />
               <div>
-                <p>Chat with us</p>
-                <p>irongate.info@gmail.com</p>
+                <p>Call us</p>
+                <p>8169017703, 7021840281</p>
               </div>
             </div>
             <div className={classes.text}>
               <FaMapPin className={classes.icons} />
               <div>
-                <p>Chat with us</p>
-                <p>irongate.info@gmail.com</p>
+                <p>Visit us</p>
+                <p>Bhayandar east, thane 401105</p>
               </div>
             </div>
           </div>

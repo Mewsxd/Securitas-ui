@@ -6,15 +6,73 @@ import joinUsImageResize from "../Assets/join us image resize.jpg";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { storage } from "../Firebase/firebase";
 import { v4 } from "uuid";
+import { useReducer } from "react";
+const initStates = {
+  name: "",
+  phoneNumber: "",
+  email: "",
+  aadharFile: null,
+};
+const reducer = (state, action) => {
+  switch (action.type) {
+    case "name":
+      return { ...state, name: action.value };
+    case "phoneNumber":
+      return { ...state, phoneNumber: action.value };
+    case "email":
+      return { ...state, email: action.value };
+    case "aadharFile":
+      return { ...state, aadharFile: action.value };
+    case "reset":
+      return { name: "", phoneNumber: "", email: "", aadharFile: null };
+    default:
+      return state;
+  }
+};
 const SectorsPage = () => {
-  const [aadharFile, setAadharFile] = useState(null);
+  // const [aadharFile, setAadharFile] = useState(null);
   const [fileUrl, setFileUrl] = useState();
+  const [state, dispatch] = useReducer(reducer, initStates);
   function formSubmit(e) {
     e.preventDefault();
-    const fileRef = ref(storage, `AadharImages/${aadharFile.name + v4()}`);
-    uploadBytes(fileRef, aadharFile).then((snapshot) => {
-      getDownloadURL(snapshot.ref).then((url) => setFileUrl(url));
-    });
+    if (
+      state.name === "" ||
+      state.phoneNumber === "" ||
+      state.aadharFile === null ||
+      state.email === ""
+    ) {
+      return alert("All fields must be filled");
+    }
+    const data = {
+      name: state.name,
+      phoneNumber: state.phoneNumber,
+      email: state.email,
+    };
+    const fileRef = ref(
+      storage,
+      `AadharImages/${state.aadharFile.name + v4()}`
+    );
+    uploadBytes(fileRef, state.aadharFile)
+      .then((snapshot) => {
+        getDownloadURL(snapshot.ref).then((url) => {
+          data.aadharImageUrl = url;
+          fetch(
+            "https://shubhsita-18680-default-rtdb.asia-southeast1.firebasedatabase.app/Contacts.json",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(data),
+            }
+          ).catch((err) => {
+            alert("Could not submit data, please try later");
+          });
+        });
+      })
+      .catch((err) => {
+        return alert("Could not submit data, please try later");
+      });
   }
   return (
     <div className={classes.mainContainer}>
@@ -154,25 +212,37 @@ const SectorsPage = () => {
               type="text"
               placeholder="Name"
               style={{ marginTop: "2vw" }}
+              onChange={(e) =>
+                dispatch({ type: "name", value: e.target.value })
+              }
               required
             />
-            <input type="text" placeholder="Phone number" required />
-            <input type="email" placeholder="Email" required />
+            <input
+              type="text"
+              placeholder="Phone number"
+              onChange={(e) =>
+                dispatch({ type: "phoneNumber", value: e.target.value })
+              }
+              required
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              onChange={(e) =>
+                dispatch({ type: "email", value: e.target.value })
+              }
+              required
+            />
             <br />
-            <label for="aadhar" required>
-              Upload your Aadhar Card
-            </label>
+            <label for="aadhar">Upload your Aadhar Card</label>
             <input
               type="file"
               id="aadhar"
-              onChange={(e) => setAadharFile(e.target.files[0])}
+              onChange={(e) =>
+                dispatch({ type: "aadharFile", value: e.target.files[0] })
+              }
               required
             />
-            {/* <input
-              className={classes.submitButton}
-              onClick={formSubmit}
-              type="submit"
-            /> */}
           </form>
           <button onClick={formSubmit}>Submit</button>
         </div>

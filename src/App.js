@@ -7,6 +7,8 @@ import RootLayout from "./Pages/RootLayout";
 import { useEffect, useState } from "react";
 import { action as formSubmitAction } from "./Components/FormComponent";
 import { ErrorPage } from "./Pages/ErrorPage";
+import MembersPage from "./Pages/MembersPage";
+import EventPage from "./Pages/EventPage";
 
 function App() {
   const [myName, setMyName] = useState("");
@@ -38,6 +40,8 @@ function App() {
           action: formSubmitAction,
         },
         { path: "/sectors", element: <SectorsPage /> },
+        { path: "/members", element: <MembersPage /> },
+        { path: "/event", element: <EventPage /> },
       ],
     },
   ]);

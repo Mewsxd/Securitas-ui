@@ -1,6 +1,7 @@
 .container {
   width: 80%;
   margin: 7vw auto;
+  text-align: center;
 }
 .container p {
   margin: 0;
@@ -42,6 +43,21 @@
   border: 3px solid #26224c;
   border-radius: 5px;
   margin: 0 2px;
+}
+.eventsButton {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: orangered;
+  color: white;
+  /* padding: 1vw 1.5vw; */
+  padding: 16px 20px;
+  font-size: 16px;
+  margin-top: 60px;
+  /* border-radius: 0.4vw; */
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: 700;
 }
 @media (max-width: 768px) {
   .container {
