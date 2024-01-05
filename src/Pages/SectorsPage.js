@@ -7,11 +7,12 @@ import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { storage } from "../Firebase/firebase";
 import { v4 } from "uuid";
 import { useReducer } from "react";
+import { useRef } from "react";
 const initStates = {
   name: "",
   phoneNumber: "",
   email: "",
-  aadharFile: null,
+  // aadharFile: null,
 };
 const reducer = (state, action) => {
   switch (action.type) {
@@ -21,43 +22,43 @@ const reducer = (state, action) => {
       return { ...state, phoneNumber: action.value };
     case "email":
       return { ...state, email: action.value };
-    case "aadharFile":
-      return { ...state, aadharFile: action.value };
+    // case "aadharFile":
+    //   return { ...state, aadharFile: action.value };
     case "reset":
-      return { name: "", phoneNumber: "", email: "", aadharFile: null };
+      return { name: "", phoneNumber: "", email: "" };
     default:
       return state;
   }
 };
 const SectorsPage = () => {
-  // const [aadharFile, setAadharFile] = useState(null);
-  const [fileUrl, setFileUrl] = useState();
+  const [aadharFile, setAadharFile] = useState("");
+  const aadharRef = useRef();
+  console.log(aadharFile);
   const [state, dispatch] = useReducer(reducer, initStates);
-  function formSubmit(e) {
+  function formSubmitHandler(e) {
     e.preventDefault();
-    if (
-      state.name === "" ||
-      state.phoneNumber === "" ||
-      state.aadharFile === null ||
-      state.email === ""
-    ) {
-      return alert("All fields must be filled");
-    }
+    // if (
+    //   state.name === "" ||
+    //   state.phoneNumber === "" ||
+    //   aadharFile === "" ||
+    //   state.email === ""
+    // ) {
+    //   return alert("All fields must be filled");
+    // }
+
     const data = {
       name: state.name,
       phoneNumber: state.phoneNumber,
       email: state.email,
     };
-    const fileRef = ref(
-      storage,
-      `AadharImages/${state.aadharFile.name + v4()}`
-    );
-    uploadBytes(fileRef, state.aadharFile)
+
+    const fileRef = ref(storage, `AadharImages/${aadharFile.name + v4()}`);
+    uploadBytes(fileRef, aadharFile)
       .then((snapshot) => {
         getDownloadURL(snapshot.ref).then((url) => {
           data.aadharImageUrl = url;
           fetch(
-            "https://shubhsita-18680-default-rtdb.asia-southeast1.firebasedatabase.app/Contacts.json",
+            "https://shubhsita-18680-default-rtdb.asia-southeast1.firebasedatabase.app/Members.json",
             {
               method: "POST",
               headers: {
@@ -66,13 +67,24 @@ const SectorsPage = () => {
               body: JSON.stringify(data),
             }
           ).catch((err) => {
+            console.log(err);
+
             alert("Could not submit data, please try later");
           });
         });
       })
+      .then(() => {
+        dispatch({ type: "reset" });
+        setAadharFile("");
+        aadharRef.current.value = "";
+        // fileRef.current.value = "";
+      })
+      .then(() => alert("Form submitted successfuly! "))
       .catch((err) => {
+        console.log(err);
         return alert("Could not submit data, please try later");
       });
+    // e.target.reset();
   }
   return (
     <div className={classes.mainContainer}>
@@ -207,7 +219,7 @@ const SectorsPage = () => {
       <div className={classes.memberForm}>
         <h1>Fill the form to become a member</h1>
         <div className={classes.formContainer}>
-          <form>
+          <form onSubmit={formSubmitHandler}>
             <input
               type="text"
               placeholder="Name"
@@ -215,6 +227,7 @@ const SectorsPage = () => {
               onChange={(e) =>
                 dispatch({ type: "name", value: e.target.value })
               }
+              value={state.name}
               required
             />
             <input
@@ -223,6 +236,7 @@ const SectorsPage = () => {
               onChange={(e) =>
                 dispatch({ type: "phoneNumber", value: e.target.value })
               }
+              value={state.phoneNumber}
               required
             />
             <input
@@ -231,6 +245,7 @@ const SectorsPage = () => {
               onChange={(e) =>
                 dispatch({ type: "email", value: e.target.value })
               }
+              value={state.email}
               required
             />
             <br />
@@ -238,13 +253,15 @@ const SectorsPage = () => {
             <input
               type="file"
               id="aadhar"
-              onChange={(e) =>
-                dispatch({ type: "aadharFile", value: e.target.files[0] })
+              ref={aadharRef}
+              onChange={
+                (e) => setAadharFile(e.target.files[0])
+                // dispatch({ type: "aadharFile", value: e.target.files[0] })
               }
               required
             />
           </form>
-          <button onClick={formSubmit}>Submit</button>
+          <button onClick={formSubmitHandler}>Submit</button>
         </div>
       </div>
     </div>
@@ -252,6 +269,3 @@ const SectorsPage = () => {
 };
 
 export default SectorsPage;
-// export async function action() {
-//   const [myAge, setMyAge] = useState("");
-// }
