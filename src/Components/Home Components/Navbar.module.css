@@ -1,4 +1,4 @@
-.container {
+.navbarContainer {
   width: 100%;
   /* background-color: #e3f0ff; */
   background-color: white;
@@ -18,8 +18,6 @@
 .left {
   flex: 5;
   display: flex;
-  /* flex-direction: column; */
-  /* justify-content: flex-start; */
   align-items: center;
   gap: 10px;
 }
@@ -42,13 +40,13 @@
 .right li {
   cursor: pointer;
 }
-a {
+.navbarContainer a {
   text-decoration: none;
   color: black;
 }
-ul a:hover,
-ul a:active,
-ul a.active {
+.navbarContainer a:hover,
+.navbarContainer a:active,
+.navbarContainer a.active {
   border-bottom: 4px solid #0d1b2a;
   /* border-radius: px; */
 }

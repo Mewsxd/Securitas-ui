@@ -9,7 +9,7 @@ const Navbar = (props) => {
     setShowHamburger(!showHamburger);
   }
   return (
-    <div className={classes.container}>
+    <div className={classes.navbarContainer}>
       <div className={classes.innerContainer}>
         <div className={classes.left}>
           <img

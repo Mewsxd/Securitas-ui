@@ -25,10 +25,17 @@ const ContactPage = () => {
                 </span>
               </li>
               <li>
-                <MdEmail />{" "}
+                <a href="mailto:satish3272003@yahoo.co.in">
+                  <MdEmail style={{ color: "#0D1B2A" }} />
+                </a>
+
                 <span>
-                  satish3272003@yahoo.co.in <br />{" "}
-                  {/* imranbanani@languagefluent.com */}
+                  <a
+                    href="mailto:satish3272003@yahoo.co.in"
+                    style={{ textDecoration: "none", color: "#0D1B2A" }}
+                  >
+                    satish3272003@yahoo.co.in
+                  </a>
                 </span>
               </li>
 

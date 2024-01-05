@@ -37,14 +37,14 @@ const SectorsPage = () => {
   const [state, dispatch] = useReducer(reducer, initStates);
   function formSubmitHandler(e) {
     e.preventDefault();
-    // if (
-    //   state.name === "" ||
-    //   state.phoneNumber === "" ||
-    //   aadharFile === "" ||
-    //   state.email === ""
-    // ) {
-    //   return alert("All fields must be filled");
-    // }
+    if (
+      state.name === "" ||
+      state.phoneNumber === "" ||
+      aadharFile === "" ||
+      state.email === ""
+    ) {
+      return alert("All fields must be filled");
+    }
 
     const data = {
       name: state.name,
@@ -254,10 +254,7 @@ const SectorsPage = () => {
               type="file"
               id="aadhar"
               ref={aadharRef}
-              onChange={
-                (e) => setAadharFile(e.target.files[0])
-                // dispatch({ type: "aadharFile", value: e.target.files[0] })
-              }
+              onChange={(e) => setAadharFile(e.target.files[0])}
               required
             />
           </form>

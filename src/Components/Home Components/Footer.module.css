@@ -6,6 +6,9 @@
   align-items: center;
   justify-content: center;
 }
+.container a {
+  text-decoration: none;
+}
 .container button {
   position: absolute;
   z-index: 100;
