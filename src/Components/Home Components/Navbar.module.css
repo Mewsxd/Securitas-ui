@@ -48,16 +48,17 @@
 .navbarContainer a:active,
 .navbarContainer a.active {
   border-bottom: 4px solid #0d1b2a;
-  /* border-radius: px; */
+}
+.left a:hover,
+.left a:active {
+  border-bottom: none;
 }
 .right li {
   font-family: Montserrat;
   font-weight: 600;
-  /* font-size: 1.2vw; */
   font-size: 16px;
   border: none;
   outline: none;
-  /* padding: 1vw 0vw; */
   padding: 14px 0;
   background: transparent;
   color: black;

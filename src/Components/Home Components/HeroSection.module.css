@@ -85,14 +85,14 @@
   }
 }
 @media (max-width: 480px) {
-  .container {
+  /* .container {
     height: 30vh;
-  }
+  } */
   .container img {
     display: inline-block;
-    width: 100%;
-    height: 100%;
-    transform: scaleX(1.2);
+    width: 125%;
+    /* height: 100%; */
+    /* transform: scaleX(1.2); */
     /* transform: scaleY(1.2); */
   }
   .hamburgerNavbar {
