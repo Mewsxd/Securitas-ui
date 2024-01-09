@@ -30,7 +30,7 @@ const Inauguration = () => {
     <div className={classes.container}>
       <h1>Inaugrural ceremony of Beti hai to kal hai</h1>
       <div className={classes.sliderContainer}>
-        <img src={sliderImages[currentImageIndex]} />
+        <img src={sliderImages[currentImageIndex]} alt="slider" />
         <button className={classes.left} onClick={leftButtonHandler}>
           ❰
         </button>
