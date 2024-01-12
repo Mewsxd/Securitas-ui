@@ -3,7 +3,7 @@ import classes from "./Navbar.module.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
 import logo from "../../Assets/logo.png";
-const Navbar = (props) => {
+const Navbar = () => {
   const [showHamburger, setShowHamburger] = useState(false);
   function hamburgerListener() {
     setShowHamburger(!showHamburger);
@@ -12,12 +12,7 @@ const Navbar = (props) => {
     <div className={classes.navbarContainer}>
       <div className={classes.innerContainer}>
         <div className={classes.left}>
-          <img
-            src={logo}
-            className={classes.logo}
-            // style={{ width: "10%", backgroundBlendMode: "lighten" }}
-            alt="logo"
-          />
+          <img src={logo} className={classes.logo} alt="logo" />
           <NavLink to={"/"}>
             <p
               className={classes.title}
@@ -26,24 +21,6 @@ const Navbar = (props) => {
               Beti Hai Toh Kal Hai
             </p>
           </NavLink>
-
-          {/* <div className={classes.logoContainer}>
-            <p
-              style={{
-                backgroundColor: "red",
-              }}
-            ></p>
-            <p
-              style={{
-                backgroundColor: "orange",
-              }}
-            ></p>
-            <p
-              style={{
-                backgroundColor: "green",
-              }}
-            ></p>
-          </div> */}
         </div>
         <div className={classes.right}>
           <ul>
