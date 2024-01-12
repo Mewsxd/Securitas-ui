@@ -44,9 +44,21 @@ const ContactPage = () => {
               </li>
             </ul>
             <div className={classes.socialMediaIcons}>
-              <BsFacebook />
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.facebook.com/BetiHaii"
+              >
+                <BsFacebook />
+              </a>
               <GrYoutube />
-              <AiFillInstagram />
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.instagram.com/betihaii"
+              >
+                <AiFillInstagram />
+              </a>
             </div>
           </div>
         </div>

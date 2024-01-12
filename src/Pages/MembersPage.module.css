@@ -17,5 +17,6 @@
 @media (max-width: 646px) {
   .membersContainer {
     justify-content: center;
+    padding: 140px 0;
   }
 }

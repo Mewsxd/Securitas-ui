@@ -36,12 +36,12 @@ import m28 from "../Assets/Members/member-28.jpeg";
 import m29 from "../Assets/Members/member-29.jpeg";
 import after8 from "../Assets/Members/member-after-8.jpeg";
 import m30 from "../Assets/Members/member-30.jpeg";
+import m31 from "../Assets/Members/member-31.jpeg";
+
 import Member from "../Components/Members Components/Member";
 const MembersPage = () => {
   const imageArray = [
     { img: m1, memberName: "Satishkumar Jha" },
-    // { img: m1, memberName: "" },
-    // m1,
     { img: m2, memberName: "Shankar Jha" },
     { img: m3, memberName: "Lalan Jha" },
     { img: after3, memberName: "Ajay Jha" },
@@ -78,7 +78,7 @@ const MembersPage = () => {
     { img: m28, memberName: "Sarita Mishra", female: true },
     { img: m29, memberName: "Praveen Singh" },
     { img: m30, memberName: "Vikas Tiwari" },
-    // { img: m24, memberName: "Sunil Keny" },
+    { img: m31, memberName: "Sushma Jha" },
   ];
   return (
     <div className={styles.membersContainer}>
@@ -87,12 +87,6 @@ const MembersPage = () => {
           <Member img={img.img} name={img.memberName} female={img?.female} />
         );
       })}
-      {/* <Member img={m1} />
-      <Member img={m2} />
-      <Member img={m3} />
-      <Member img={m4} />
-      <Member img={m5} />
-      <Member img={m6} /> */}
     </div>
   );
 };
