@@ -1,6 +1,5 @@
 .navbarContainer {
   width: 100%;
-  /* background-color: #e3f0ff; */
   background-color: white;
   color: black;
   position: fixed;
@@ -32,7 +31,6 @@
 }
 .right ul {
   padding: 0;
-  /* margin: 3px 0; */
   display: flex;
   list-style: none;
   gap: 4vw;
@@ -85,7 +83,6 @@
   cursor: pointer;
 }
 .title {
-  /* font-size: 1.5vw; */
   font-size: 23px;
   font-weight: 600;
 }
@@ -109,9 +106,6 @@
   .right ul {
     display: none;
   }
-  /* .title {
-    font-size: 3vw;
-  } */
 }
 @media (max-width: 480px) {
   .title {
@@ -127,7 +121,6 @@
     padding: 1rem 0vw;
   }
   .hamburgerNavbar li {
-    /* font-size: 1.8rem; */
     font-weight: 600;
   }
 }
