@@ -25,16 +25,16 @@ const ContactPage = () => {
                 </span>
               </li>
               <li>
-                <a href="mailto:satish3272003@yahoo.co.in">
+                <a href="mailto:betihaiitokal@gmail.com">
                   <MdEmail style={{ color: "#0D1B2A" }} />
                 </a>
 
                 <span>
                   <a
-                    href="mailto:satish3272003@yahoo.co.in"
+                    href="mailto:betihaiitokal@gmail.com"
                     style={{ textDecoration: "none", color: "#0D1B2A" }}
                   >
-                    satish3272003@yahoo.co.in
+                    betihaiitokal@gmail.com
                   </a>
                 </span>
               </li>
@@ -49,7 +49,7 @@ const ContactPage = () => {
                 rel="noreferrer"
                 href="https://www.facebook.com/BetiHaii"
               >
-                <BsFacebook />
+                <BsFacebook style={{ color: "black" }} />
               </a>
               <GrYoutube />
               <a
@@ -57,7 +57,7 @@ const ContactPage = () => {
                 rel="noreferrer"
                 href="https://www.instagram.com/betihaii"
               >
-                <AiFillInstagram />
+                <AiFillInstagram style={{ color: "black" }} />
               </a>
             </div>
           </div>

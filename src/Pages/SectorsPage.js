@@ -33,7 +33,6 @@ const reducer = (state, action) => {
 const SectorsPage = () => {
   const [aadharFile, setAadharFile] = useState("");
   const aadharRef = useRef();
-  console.log(aadharFile);
   const [state, dispatch] = useReducer(reducer, initStates);
   function formSubmitHandler(e) {
     e.preventDefault();
@@ -67,8 +66,6 @@ const SectorsPage = () => {
               body: JSON.stringify(data),
             }
           ).catch((err) => {
-            console.log(err);
-
             alert("Could not submit data, please try later");
           });
         });
@@ -81,7 +78,6 @@ const SectorsPage = () => {
       })
       .then(() => alert("Form submitted successfuly! "))
       .catch((err) => {
-        console.log(err);
         return alert("Could not submit data, please try later");
       });
     // e.target.reset();
@@ -210,9 +206,9 @@ const SectorsPage = () => {
         <div className={classes.innerJoinUsHeader}>
           <h1>Join Us And Become A Member</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient.
+            Join our NGO, championing impactful change. Become a member, support
+            our noble cause, and contribute to creating a positive impact in the
+            community. Together, we make a difference.
           </p>
         </div>
       </div>

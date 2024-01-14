@@ -16,7 +16,7 @@ const Form = () => {
               <MdEmail className={classes.icons} />
               <div>
                 <p>Chat with us</p>
-                <p>satish3272003@yahoo.co.in</p>
+                <p>betihaiitokal@gmail.com</p>
               </div>
             </div>
             <div className={classes.text}>
@@ -36,7 +36,9 @@ const Form = () => {
           </div>
         </div>
         <div className={classes.right}>
-          <FormComponent />
+          {/* <FormComponent /> */}
+          <h1>Get involved</h1>
+          <button>Connect with us</button>
         </div>
       </div>
     </div>

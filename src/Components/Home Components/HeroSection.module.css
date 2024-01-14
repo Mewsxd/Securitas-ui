@@ -85,9 +85,6 @@
   }
 }
 @media (max-width: 480px) {
-  /* .container {
-    height: 30vh;
-  } */
   .container img {
     display: inline-block;
     width: 125%;

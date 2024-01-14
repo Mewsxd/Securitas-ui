@@ -27,9 +27,7 @@ const FormComponent = () => {
   }
   const navigation = useNavigation();
   const isSubmitting = navigation.state === "submitting";
-  useEffect(() => {
-    console.log(isSubmitting);
-  }, [isSubmitting]);
+  useEffect(() => {}, [isSubmitting]);
   return (
     <div className={classes.formContainer}>
       <Form method="POST" onSubmit={submitHandler}>
@@ -81,7 +79,6 @@ export async function action({ request }) {
     phoneNumber: formData.get("phone"),
     email: formData.get("email"),
   };
-  console.log(data);
   const response = await fetch(
     "https://shubhsita-18680-default-rtdb.asia-southeast1.firebasedatabase.app/Contacts.json",
     {
