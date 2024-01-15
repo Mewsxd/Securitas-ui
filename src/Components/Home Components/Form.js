@@ -36,9 +36,9 @@ const Form = () => {
           </div>
         </div>
         <div className={classes.right}>
-          {/* <FormComponent /> */}
-          <h1>Get involved</h1>
-          <button>Connect with us</button>
+          <FormComponent />
+          {/* <h1>Get involved</h1>
+          <button>Connect with us</button> */}
         </div>
       </div>
     </div>

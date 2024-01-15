@@ -51,7 +51,13 @@ const ContactPage = () => {
               >
                 <BsFacebook style={{ color: "black" }} />
               </a>
-              <GrYoutube />
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.youtube.com/@BetiHaiiToKalHai"
+              >
+                <GrYoutube style={{ color: "black" }} />
+              </a>
               <a
                 target="_blank"
                 rel="noreferrer"

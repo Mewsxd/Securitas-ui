@@ -32,6 +32,7 @@ const reducer = (state, action) => {
 };
 const SectorsPage = () => {
   const [aadharFile, setAadharFile] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const aadharRef = useRef();
   const [state, dispatch] = useReducer(reducer, initStates);
   function formSubmitHandler(e) {
@@ -44,7 +45,7 @@ const SectorsPage = () => {
     ) {
       return alert("All fields must be filled");
     }
-
+    setIsSubmitting(true);
     const data = {
       name: state.name,
       phoneNumber: state.phoneNumber,
@@ -79,8 +80,8 @@ const SectorsPage = () => {
       .then(() => alert("Form submitted successfuly! "))
       .catch((err) => {
         return alert("Could not submit data, please try later");
-      });
-    // e.target.reset();
+      })
+      .finally(() => setIsSubmitting(false));
   }
   return (
     <div className={classes.mainContainer}>
@@ -254,7 +255,9 @@ const SectorsPage = () => {
               required
             />
           </form>
-          <button onClick={formSubmitHandler}>Submit</button>
+          <button onClick={formSubmitHandler}>
+            {isSubmitting ? "Submitting" : "Submit"}
+          </button>
         </div>
       </div>
     </div>

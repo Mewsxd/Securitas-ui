@@ -57,7 +57,13 @@ const Footer = () => {
               >
                 <BsFacebook />
               </a>
-              <GrYoutube />
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.youtube.com/@BetiHaiiToKalHai"
+              >
+                <GrYoutube />
+              </a>
               <a
                 target="_blank"
                 rel="noreferrer"

@@ -92,6 +92,8 @@ export async function action({ request }) {
   if (!response.ok) {
     alert("Could not submit form due to error! ");
     return response;
+  } else {
+    alert("Form submitted successfully");
   }
   return response;
 }
